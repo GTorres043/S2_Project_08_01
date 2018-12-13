@@ -15,10 +15,64 @@
 
 /* Table Styles */
 
+/* this style is for the whole table to be displayed with a linear gradient starting from the bottom, it will also give it a border of 5 pixels solid and grey color */
+table {
+    background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
+
+/* this will give all the table heading and table data elements a border of 3 pixels solid and grey, a line height of 1.4em and 8 pixel padding  */
+th,
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* this will target table heading elemts specifically giving it a background color of black a light blue font color and a font weight of normal  */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* this targets the table data elements and gives them a font color of white a font size of 0.9em and a text align of top */
+td {
+    color: white;
+    font-size: 0.9em;
+    text-align: top;
+}
+
+
 
 
 /* Column Styles */
 
+/* these styles will give specific widths the the id col elemnts with the id firstCol and the class of dataCols  */
+col#firstCol {
+    width: 24%;
+
+}
+
+col.dataCols {
+    width: 19%;
+}
 
 
 /* Table Header Styles */
+
+/* this will give the thead element and table rows a height of 60 pixels  */
+thead tr {
+    height: 60px;
+}
+
+/* this will target the first table heading within the first table row in the thead group and give it a font size of 2em */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* this will target the first table row in the thead group and giving it a transparent background and a font color of black */
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
+}
